@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import "./Menu.css";
-import logo from "../img/logo.png";
+import logo from "../img/coplogoed.png";
 import {
-  FaDelicious,
-  FaShoppingCart,
+  FaIdCard,
+  FaComment,
   FaWallet,
   FaChartLine,
   FaRegClock,
-  FaCog,
+
   FaSignOutAlt,
 } from "react-icons/fa";
 
@@ -27,18 +27,20 @@ function Menu() {
 
   return (
     <menu>
+      <a href="#" target="_blank" rel="norefferer">
       <img src={logo} alt="" />
+      </a>
 
       <ul id="mainMenu">
-        <Icon icon={<FaDelicious />} />
-        <Icon icon={<FaShoppingCart />} />
+        <Icon icon={<FaIdCard />} />
+        <Icon icon={<FaComment />} />
         <Icon icon={<FaWallet />} />
         <Icon icon={<FaChartLine />} />
         <Icon icon={<FaRegClock />} />
       </ul>
 
       <ul className="lastMenu">
-        <Icon icon={<FaCog />} />
+       
         <Icon icon={<FaSignOutAlt />} />
       </ul>
     </menu>
