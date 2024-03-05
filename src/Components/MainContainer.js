@@ -11,12 +11,7 @@ import Card4 from "../img/card4.jpg";
 
 function MainContainer() {
   return (
-    <div className="maincontainer"       style={{
-            background: `url(${Back})`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize:"contain",
-            backgroundPosition: "center",
-          }}>
+    <div className="maincontainer">
       <div className="left">
         <div
           className="banner"
